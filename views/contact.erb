@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>The Web Journey</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+<link href="blogstyle.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="index.html">The Web Journey</a></h1>
+			<p>Jonathan Lau</a></p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="blog.html">blog</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li class="current_page_item"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="splash" class="container"><span>Feel free to get in touch!</span></div>
+	<div id="page" class="container">
+		<div id="content">
+		      <div class="post">
+			 <form id="contact-form" action="/contact.html" method="post">
+        			     <h3>Shoot me a message</h3>
+        			     <h4>Fill in the form below, and I'll get back to you within 24 hours.</h4>
+        			     <div>
+                		          <label>
+                                                <span>Name: (required)</span>
+                                                <input placeholder="Please enter your name" type="text" tabindex="1" name="name" required autofocus>
+                		          </label>
+        			     </div>
+        			     <div>
+                		          <label>
+                                                <span>Email: (required)</span>
+                                                <input placeholder="Please enter your email address" type="email" name="email" tabindex="2" required>
+                		          </label>
+        			     </div>
+        			     <div>
+                		          <label>
+                                                <span>Telephone:</span>
+                                                <input placeholder="Please enter your number" type="tel" tabindex="3">
+                		          </label>
+        			     </div>
+        			     <div>
+              		            <label>
+                                                    <span>Website:</span>
+                                                    <input placeholder="Begin with http://" type="url" tabindex="4">
+                		              </label>
+        			     </div>
+        			     <div>
+                		          <label>
+                                                    <span>Message: (required)</span>
+                                                    <textarea placeholder="Your message here." name = "message" tabindex="5" required></textarea>
+                		          </label>
+        			     </div>
+        			     <div>
+                		          <button name="submit" type="submit" id="contact-submit">Send Email</button>
+        			     </div>
+		          </form>
+		      </div>
+		      <div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<div>
+				<h2>blog posts</h2>
+				<ul class="list-style1">
+					<li><a href="learning.html">How I got started</a></li>
+					<li><a href="tips.html">Beginner's Tips for Web Design and Development</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page --> 
+<script>
+(function() {  
+// Change text inside send button on submit
+    var send = document.getElementById('contact-submit');
+    if(send) {
+        send.onclick = function () {
+            this.innerHTML = '...Sending';
+        }
+    }
+})();
+</script>
+</div>
+</body>
+</html>
