@@ -10,7 +10,7 @@ get '/projects.html' do
   erb :projects
 end
 
-get '/index.html' do
+get '/' do
   erb :index
 end
 
