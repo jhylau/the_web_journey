@@ -2,8 +2,7 @@ require 'rubygems'
 require 'sinatra'    
 require 'pony'
 require "sinatra/activerecord"
-
-set :database, "sqlite3:///blog.db"
+require '.config/environments'
 
 class Post < ActiveRecord::Base
   def up
